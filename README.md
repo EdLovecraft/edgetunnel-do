@@ -73,30 +73,6 @@
 
    访问 `https://<你的域名>/admin`，输入管理员密码即可登录。
 
-### wrangler.toml 完整示例
-
-```toml
-name = "edgetunnel"
-main = "_worker.js"
-compatibility_date = "2024-09-23"
-
-[durable_objects]
-bindings = [
-  { name = "DO", class_name = "EDTDO" }
-]
-
-# 首次部署时需要，部署成功后可移除
-[[migrations]]
-tag = "v1"
-new_sqlite_classes = ["EDTDO"]
-
-[vars]
-ADMIN = "你的管理员密码"
-# UUID = ""
-# PROXYIP = ""
-# URL = ""
-```
-
 ## 环境变量说明
 
 | 变量名 | 必填 | 示例 | 备注 |
