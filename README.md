@@ -24,8 +24,8 @@
 1. **克隆项目并安装依赖**
 
    ```bash
-   git clone <本项目地址>
-   cd <项目目录>
+   git clone https://github.com/EdLovecraft/edgetunnel-do.git
+   cd edgetunnel-do
    npm install
    ```
 
